@@ -1,0 +1,32 @@
+{
+  "docs": [
+    {
+      "uuid": "3dc25e74-6bec-4a57-b127-e620d7bf2d8c",
+      "slug": "installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing OpenEuphoria locally",
+      "blurb": "Learn how to install OpenEuphoria locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "a2ab2a2c-6f80-4f0e-ae20-1e804906cc20",
+      "slug": "learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn OpenEuphoria",
+      "blurb": "An overview of how to get started from scratch with OpenEuphoria"
+    },
+    {
+      "uuid": "d6792a01-3fcc-4126-b318-6f329ac18192",
+      "slug": "tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the OpenEuphoria track",
+      "blurb": "Learn how to test your OpenEuphoria exercises on Exercism"
+    },
+    {
+      "uuid": "cf67f253-260c-4b3b-9054-221619475a9a",
+      "slug": "resources",
+      "path": "docs/RESOURCES.md",
+      "title": "Useful OpenEuphoria resources",
+      "blurb": "A collection of useful resources to help you master OpenEuphoria"
+    }
+  ]
+}
