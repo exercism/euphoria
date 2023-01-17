@@ -12,18 +12,35 @@
   "version": 3,
   "online_editor": {
     "indent_style": "space",
-    "indent_size": 4,
+    "indent_size": 2,
     "highlightjs_language": "TODO: specify highlightjs language"
   },
   "files": {
-    "solution": [],
-    "test": [],
-    "example": [],
-    "exemplar": []
+    "solution": [
+      "%{pascal_slug}.ex"
+    ],
+    "test": [
+      "t_%{pascal_slug}.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ],
+    "exemplar": [
+      ".meta/exemplar.ex"
+    ]
   },
   "exercises": {
     "concept": [],
-    "practice": []
+    "practice": [
+      {
+        "slug": "hello-world",
+        "name": "Hello World",
+        "uuid": "6e37e01f-324d-4a92-ae96-b1810962cc4c",
+        "prerequisites": [],
+        "difficulty": 1,
+        "practices": []
+      }
+    ]
   },
   "concepts": [],
   "key_features": [],
