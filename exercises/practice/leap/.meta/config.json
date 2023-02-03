@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "axtens"
+  ],
+  "files": {
+    "solution": [
+      "leap.ex"
+    ],
+    "test": [
+      "t_leap.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Given a year, report if it is a leap year.",
+  "source": "JavaRanch Cattle Drive, exercise 3",
+  "source_url": "http://www.javaranch.com/leap.jsp"
+}
