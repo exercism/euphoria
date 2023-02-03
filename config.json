@@ -45,6 +45,13 @@
                 "prerequisites": [],
                 "difficulty": 3,
                 "practices": []
+            }, {
+                "slug": "isogram",
+                "name": "Isogram",
+                "uuid": "ff3c2465-b540-4de7-9223-5bce2debaba9",
+                "prerequisites": [],
+                "difficulty": 3,
+                "practices": []
             }
         ]
     },
