@@ -1,7 +1,6 @@
 include std/unittest.e 
 
---include isogram.ex 
-include .meta/example.ex
+include isogram.ex 
 
 test_true("empty string" , isogram("")  )
 test_true("isogram with only lower case characters" , isogram("isogram") ) 
