@@ -1,0 +1,1 @@
+public function hey(sequence s)
