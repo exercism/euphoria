@@ -31,66 +31,85 @@
     },
     "exercises": {
         "concept": [],
-        "practice": [{
+        "practice": [
+            {
                 "slug": "hello-world",
                 "name": "Hello World",
                 "uuid": "6e37e01f-324d-4a92-ae96-b1810962cc4c",
                 "prerequisites": [],
                 "difficulty": 1,
                 "practices": []
-            }, {
+            },
+            {
                 "slug": "raindrops",
                 "name": "Raindrops",
                 "uuid": "a9e6c81b-4b46-445e-a381-a2743a5d7861",
                 "prerequisites": [],
                 "difficulty": 3,
                 "practices": []
-            }, {
+            },
+            {
                 "slug": "isogram",
                 "name": "Isogram",
                 "uuid": "ff3c2465-b540-4de7-9223-5bce2debaba9",
                 "prerequisites": [],
                 "difficulty": 3,
                 "practices": []
-            }, {
+            },
+            {
                 "slug": "leap",
                 "name": "Leap",
                 "uuid": "b2bd55e6-5efc-4014-b1ee-050ee4b120cb",
                 "prerequisites": [],
                 "difficulty": 2,
                 "practices": []
-            }, {
+            },
+            {
                 "slug": "hamming",
                 "name": "Hamming",
                 "uuid": "8a0c101b-9cc7-4c10-be3d-fe29c618f8e8",
                 "prerequisites": [],
                 "difficulty": 2,
                 "practices": []
+            },
+            {
+                "slug": "bob",
+                "name": "Bob",
+                "uuid": "4e696452-1bec-4c2f-9b35-56ba9e1a3a35",
+                "prerequisites": [],
+                "difficulty": 4,
+                "practices": []
             }
         ]
     },
     "concepts": [],
-    "key_features": [{
+    "key_features": [
+        {
             "icon": "safe",
             "title": "Safe",
             "content": "Extensive error checking with full descriptions, stack trace, and a dump of variable values."
-        }, {
+        },
+        {
             "icon": "cross-platform",
             "title": "Cross-platform",
             "content": "Euphoria programs run under Windows, Linux, OS/X, and any platform supporting GCC."
-        }, {
+        },
+        {
             "icon": "expressive",
             "title": "Expressive",
             "content": "Routines are naturally generic, allowing for flexibility in handling different data types."
-        }, {
+        },
+        {
             "icon": "easy",
             "title": "Easy",
             "content": "A remarkably simple, flexible, powerful language definition that is easy to learn and use."
-        }, {
+        },
+        {
             "icon": "fast",
             "title": "Fast",
             "content": "A high-performance interpreter and an optimizing translator to C."
-        }, {
+        },
+        {
             "icon": "documentation",
             "title": "Documentation",
             "content": "Documentation is extensive, making it easy to get started with OpenEuphoria."
