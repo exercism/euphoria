@@ -1,0 +1,20 @@
+{
+    "authors": [
+      "axtens"
+    ],
+    "files": {
+      "solution": [
+        "acronym.ex"
+      ],
+      "test": [
+        "t_acronym.e"
+      ],
+      "example": [
+        ".meta/example.ex"
+      ]
+    },
+    "blurb": "Convert a long phrase to its acronym.",
+    "source": "Julien Vanier",
+    "source_url": "https://github.com/monkbroc"
+  }
+  
