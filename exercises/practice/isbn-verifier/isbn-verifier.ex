@@ -1,0 +1,1 @@
+-- public function is_valid(sequence isbn)
