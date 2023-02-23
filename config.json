@@ -143,6 +143,14 @@
                 "prerequisites": [],
                 "difficulty": 4,
                 "practices": []
+            },
+            {
+                "slug": "triangle",
+                "name": "Triangle",
+                "uuid": "2f56c390-14a7-4f2a-b817-890779301122",
+                "prerequisites": [],
+                "difficulty": 5,
+                "practices": []
             }
         ]
     },
