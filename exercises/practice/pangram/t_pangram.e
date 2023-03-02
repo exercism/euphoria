@@ -2,6 +2,8 @@ include std/unittest.e
 
 include pangram.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("empty sentence",is_pangram(""),0)
 test_equal("perfect lower case",is_pangram("abcdefghijklmnopqrstuvwxyz"),1)
 test_equal("only lower case",is_pangram("the quick brown fox jumps over the lazy dog"),1)

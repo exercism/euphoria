@@ -2,6 +2,8 @@ include std/unittest.e
 
 include acronym.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("basic",acronym("Portable Network Graphics"),"PNG")
 test_equal("lowercase words",acronym("Ruby on Rails"),"ROR")
 test_equal("punctuation",acronym("First In, First Out"),"FIFO")

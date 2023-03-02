@@ -2,6 +2,8 @@ include std/unittest.e
 
 include roman-numerals.ex
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("1 is I",roman(1),"I")
 test_equal("2 is II",roman(2),"II")
 test_equal("3 is III",roman(3),"III")

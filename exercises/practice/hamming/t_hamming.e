@@ -2,6 +2,8 @@ include std/unittest.e
 
 include hamming.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("empty strands",distance("",""),0)
 test_equal("single letter identical strands",distance("A","A"),0)
 test_equal("single letter different strands",distance("G","T"),1)

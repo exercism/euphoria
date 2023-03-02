@@ -2,6 +2,8 @@ include std/unittest.e
 
 include collatz-conjecture.ex
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("zero steps for one",steps(1),0)
 test_equal("divide if even",steps(16),4)
 test_equal("even and odd steps",steps(12),9)

@@ -26,5 +26,5 @@ public function is_scalene(sequence sides)
   if not is_triangle(sorted) then
     return 0
   end if
-  return sorted[1] != sorted[2] and sorted[3] != sorted[3] and sorted[3] != sorted[1]
+  return sorted[1] != sorted[2] and sorted[2] != sorted[3] and sorted[3] != sorted[1]
 end function

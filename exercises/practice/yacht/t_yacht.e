@@ -2,6 +2,8 @@ include std/unittest.e
 
 include yacht.ex
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("Yacht",score({5,5,5,5,5},"yacht"),50)
 test_equal("Not Yacht",score({1,3,3,2,5},"yacht"),0)
 test_equal("Ones",score({1,1,1,3,5},"ones"),3)
