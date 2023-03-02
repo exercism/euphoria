@@ -2,6 +2,8 @@ include std/unittest.e
 
 include bob.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("stating something",hey("Tom-ay-to, tom-aaaah-to."),"Whatever.")
 test_equal("shouting",hey("WATCH OUT!"),"Whoa, chill out!")
 test_equal("shouting gibberish",hey("FCECDFCAAB"),"Whoa, chill out!")

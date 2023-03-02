@@ -2,6 +2,8 @@ include std/unittest.e
 
 include anagram.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("no matches",findAnagrams("diaper",{"hello","world","zombies","pants"}),{})
 test_equal("detects two anagrams",findAnagrams("master",{"stream","pigeon","maters"}),{"maters","stream"})
 test_equal("detects two anagrams",findAnagrams("solemn",{"lemons","cherry","melons"}),{"lemons","melons"})

@@ -2,6 +2,8 @@ include std/unittest.e
 
 include triangle.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("all sides are equal",is_equilateral({2,2,2}),1)
 test_equal("any side is unequal",is_equilateral({2,3,2}),0)
 test_equal("no sides are equal",is_equilateral({5,4,6}),0)

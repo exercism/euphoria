@@ -1,0 +1,1 @@
+-- public function pythagorean_triplets(integer perim) 

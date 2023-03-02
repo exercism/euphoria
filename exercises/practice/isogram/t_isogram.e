@@ -2,6 +2,8 @@ include std/unittest.e
 
 include isogram.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_true("empty string" , isogram("")  )
 test_true("isogram with only lower case characters" , isogram("isogram") ) 
 test_false("word with one duplicated character" , isogram("eleven")  )

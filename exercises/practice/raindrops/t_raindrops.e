@@ -2,6 +2,8 @@ include std/unittest.e
 
 include raindrops.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("the sound of 1 is 1" , raindrops(1),  "1" )
 test_equal("the sound for 10 is Plang as it has a factor 5" , raindrops(10),  "Plang" )
 test_equal("the sound for 105 is PlingPlangPlong as it has factors 3, 5 and 7" , raindrops(105),  "PlingPlangPlong" )

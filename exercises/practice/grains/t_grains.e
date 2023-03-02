@@ -2,6 +2,8 @@ include std/unittest.e
 
 include grains.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("grains on square 1",square(1),1)
 test_equal("grains on square 2",square(2),2)
 test_equal("grains on square 3",square(3),4)

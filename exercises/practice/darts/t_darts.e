@@ -2,6 +2,8 @@ include std/unittest.e
 
 include darts.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("Missed target",score(9,-9),0)
 test_equal("On the outer circle",score(10,0),1)
 test_equal("On the middle circle",score(0,-5),5)

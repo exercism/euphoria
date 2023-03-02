@@ -2,6 +2,8 @@ include std/unittest.e
 
 include isbn-verifier.ex 
 
+set_test_verbosity(TEST_SHOW_ALL)
+
 test_equal("valid isbn",is_valid("3-598-21508-8"),1)
 test_equal("invalid isbn check digit",is_valid("3-598-21508-9"),0)
 test_equal("valid isbn with a check digit of 10",is_valid("3-598-21507-X"),1)
