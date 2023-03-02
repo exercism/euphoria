@@ -167,6 +167,14 @@
                 "prerequisites": [],
                 "difficulty": 5,
                 "practices": []
+            },
+            {
+                "slug": "pythagorean-triplets",
+                "name": "Pythagorean Triplets",
+                "uuid": "a397a1f7-5ac2-462e-9221-e07b4cd071d3",
+                "prerequisites": [],
+                "difficulty": 6,
+                "practices": []
             }
         ]
     },
