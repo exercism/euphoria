@@ -8,7 +8,7 @@
         "luhn.ex"
       ],
       "test": [
-        "T_luhn.e"
+        "t_luhn.e"
       ],
       "example": [
         ".meta/example.ex"
