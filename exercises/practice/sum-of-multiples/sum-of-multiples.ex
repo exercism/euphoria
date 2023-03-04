@@ -1,0 +1,1 @@
+-- public function sum_of_multiples(sequence f, integer lim) 
