@@ -1,0 +1,20 @@
+{
+    "authors": [
+      "petelomax"
+    ],
+    "files": {
+      "solution": [
+        "sum-of-multiples.ex"
+      ],
+      "test": [
+        "t_sum-of-multiples.e"
+      ],
+      "example": [
+        ".meta/example.ex"
+      ]
+    },
+    "blurb": "Given a number, find the sum of all the multiples of particular numbers up to but not including that number.",
+    "source": "A variation on Problem 1 at Project Euler",
+    "source_url": "http://projecteuler.net/problem=1"
+  }
+  
