@@ -1,15 +1,23 @@
 # Installation
 
-<!-- TODO: write document
+Euphoria for various platforms can be downloaded [OpenEuphoria.org][Download].
 
-  This document should describe what the student needs to install
-  to allow working on the track on their local system using the CLI.
+Euphoria v4.1 can be installed under 
+ * [Windows][Windows Installation], 
+ * [Linux and FreeBSD][Linux and FreeBSD Installation] and 
+ * [MacOS][MacOS Installation]
 
-  You can include the installation instructions in this document, but
-  usually it is better to link to a resource with the official installation
-  instructions, to prevent the instructions from becoming outdated.
+Euphoria v3.1.1 for [Windows (Vista/XP/NT/2000/ME/98/95) and DOS][DOS Installation] is also available
 
-  The contents of this document are displayed on the track's documentation
-  page at `https://exercism.org/docs/tracks/<track>/installation`.
+After installation, the directory layout should match that given in the [Post Install][Post Install] documentation.
 
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+Finally, there are instructions available for tweaking the [Euphoria Configuration file][Euphoria Configuration].
+
+
+[Windows Installation]: https://openeuphoria.org/docs/installing_euphoria.html#_34_windows
+[Linux and FreeBSD Installation]: https://openeuphoria.org/docs/installing_euphoria.html#_43_linuxandfreebsd
+[MacOS Installation]: https://openeuphoria.org/docs/installing_euphoria.html#_44_osx
+[Post Install]: https://openeuphoria.org/docs/installing_euphoria.html#_46_postinstall
+[Euphoria Configuration]: https://openeuphoria.org/docs/configuration.html#_48_setuptheeuphoriaconfigurationfileeucfg
+[Download]: https://openeuphoria.org/wiki/view/DownloadEuphoria.wc
+[DOS Installation]: http://rapideuphoria.com/v20.htm

@@ -1,1 +1,5 @@
-TODO: add snippet
+procedure Hello(sequence place)
+    puts(1, "Hello, " & place & "!\n")
+end procedure
+
+Hello("World")

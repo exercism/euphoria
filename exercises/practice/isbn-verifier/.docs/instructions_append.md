@@ -2,7 +2,7 @@
  
 ### From the command line
  
-Simply type `eutest`. It is assumed that the path to the openeuphoria binaries has declared in the PATH environment variable.
+Simply type `eutest`. It is assumed that the path to the openeuphoria binaries has been declared in the PATH environment variable.
   
 ### Editing the t_???.e file
  

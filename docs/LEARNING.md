@@ -1,13 +1,23 @@
 # Learning
 
-<!-- TODO: write document
+Euphoria has a wide variety of resources to help both experiences programmers and beginners.
 
-  This document should link to learning resources.
+## Documentation
 
-  Feel free to link to any good learning resources you know, whether they
-  be websites, blogs, books, videos or courses.
+ * The [Main documentation](https://openeuphoria.org/docs/)
+ * [Additional material](https://openeuphoria.org/wiki/view/Additional%20Documentation.wc) including extra documentation, tutorials, guides, and other useful information about using the language
+ * [Known issues](https://openeuphoria.org/wiki/view/Updated%20Documentation.wc)
 
-  The contents of this document are displayed on the track's documentation
-  page at `https://exercism.org/docs/tracks/<track>/learning`.
+## Tutorials
 
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+ * [Solving the FizzBuzz challenge](https://openeuphoria.org/wiki/view/fizzbuzz.wc)
+ * [Member Generated](https://openeuphoria.org/category/members.wc?category=Tutorial) tutorials 
+
+## Videos
+
+Crazy Viking Gamer's [Euphoria Programming Tutorials](https://www.youtube.com/playlist?list=PLRQl-SFCZCJvX-h1iqCHoJVlr7DmafXB7)
+
+## The Forum and the Wiki
+
+ * [OpenEuphoria Forum](https://openeuphoria.org/forum/index.wc) 
+ * [Official Euphoria Wiki!](https://openeuphoria.org/wiki/view/home.wc) which links to everything else

@@ -1,13 +1,16 @@
 # Resources
 
-<!-- TODO: write document
+## The Forum and the Wiki
 
-  This document should link to useful resources.
+ * [OpenEuphoria Forum](https://openeuphoria.org/forum/index.wc) 
+ * [Official Euphoria Wiki!](https://openeuphoria.org/wiki/view/home.wc) which links to everything else
 
-  Feel free to link to any good resources you know, whether they
-  be websites, videos, mailing lists, etc.
+## Other Resources
 
-  The contents of this document are displayed on the track's documentation
-  page at `https://exercism.org/docs/tracks/<track>/resources`.
+### Github
 
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+Github's [OpenEuphoria group](https://github.com/OpenEuphoria).
+
+### The Archive
+
+A collection of [user contributed Euphoria code](http://rapideuphoria.com/archive.htm) from the earliest days till 2018. 
