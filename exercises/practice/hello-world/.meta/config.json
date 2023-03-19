@@ -4,10 +4,10 @@
     ],
     "files": {
       "solution": [
-        "hello_world.ex"
+        "hello-world.ex"
       ],
       "test": [
-        "t_hello_world.e"
+        "t_hello-world.e"
       ],
       "example": [
         ".meta/example.ex"
