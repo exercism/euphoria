@@ -29,7 +29,8 @@ done
 # Verify the Practice Exercises
 for practice_exercise_dir in ./exercises/practice/*/; do
     if [ -d $practice_exercise_dir ]; then
-        echo "Checking $(basename "${practice_exercise_dir}") exercise..."
-        # TODO: run command to verify that the example solution passes the tests
+        echo -n "Checking $(basename "${practice_exercise_dir}") exercise..."
+        eui bin/run.ex $(basename "${practice_exercise_dir}") ${practice_exercise_dir} /tmp
+    	cat /tmp/results.json | jq -r '. | .status'
     fi
 done
