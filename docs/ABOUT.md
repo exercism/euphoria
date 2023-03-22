@@ -36,7 +36,7 @@ A full-screen, multi-file editor is also included. On a color monitor, the edito
 
 ## Multi-platform
 
-Euphoria programs run under Windows, Linux, OS/X, FreeBSD, NetBSD, OpenBSD and can be easily ported to any platform supporting GCC.
+Euphoria programs run under Windows, Linux, MacOS, FreeBSD, NetBSD, OpenBSD and can be easily ported to any platform supporting GCC.
 
 ## Stand-alone
 
