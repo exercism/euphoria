@@ -1,6 +1,6 @@
 {
-    "language": "OpenEuphoria",
-    "slug": "openeuphoria",
+    "language": "Euphoria",
+    "slug": "euphoria",
     "active": false,
     "status": {
         "concept_exercises": false,
@@ -224,7 +224,7 @@
         {
             "icon": "documentation",
             "title": "Documentation",
-            "content": "Documentation is extensive, making it easy to get started with OpenEuphoria."
+            "content": "Documentation is extensive, making it easy to get started with Euphoria."
         }
     ],
     "tags": [
