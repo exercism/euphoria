@@ -1,20 +1,19 @@
 {
-    "blurb": "Given a number determine whether or not it is valid per the Luhn formula.",
-    "authors": [
-      "petelomax"
+  "blurb": "Given a number determine whether or not it is valid per the Luhn formula.",
+  "authors": [
+    "petelomax"
+  ],
+  "files": {
+    "solution": [
+      "luhn.ex"
     ],
-    "files": {
-      "solution": [
-        "luhn.ex"
-      ],
-      "test": [
-        "t_luhn.e"
-      ],
-      "example": [
-        ".meta/example.ex"
-      ]
-    },
-    "source": "The Luhn Algorithm on Wikipedia",
-    "source_url": "http://en.wikipedia.org/wiki/Luhn_algorithm"
-  }
-  
+    "test": [
+      "t_luhn.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "source": "The Luhn Algorithm on Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Luhn_algorithm"
+}
