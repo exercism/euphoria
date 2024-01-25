@@ -1,20 +1,19 @@
 {
-    "authors": [
-      "axtens"
+  "authors": [
+    "axtens"
+  ],
+  "files": {
+    "solution": [
+      "triangle.ex"
     ],
-    "files": {
-      "solution": [
-        "triangle.ex"
-      ],
-      "test": [
-        "t_triangle.e"
-      ],
-      "example": [
-        ".meta/example.ex"
-      ]
-    },
-    "blurb": "Determine if a triangle is equilateral, isosceles, or scalene.",
-    "source": "The Ruby Koans triangle project, parts 1 & 2",
-    "source_url": "http://rubykoans.com"
-  }
-  
+    "test": [
+      "t_triangle.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Determine if a triangle is equilateral, isosceles, or scalene.",
+  "source": "The Ruby Koans triangle project, parts 1 & 2",
+  "source_url": "https://web.archive.org/web/20220831105330/http://rubykoans.com"
+}

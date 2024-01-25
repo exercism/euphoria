@@ -1,20 +1,20 @@
 {
-    "authors": [
-        "axtens"
+  "authors": [
+    "axtens"
+  ],
+  "contributors": [],
+  "files": {
+    "solution": [
+      "grains.ex"
     ],
-    "contributors": [],
-    "files": {
-        "solution": [
-            "grains.ex"
-        ],
-        "test": [
-            "t_grains.e"
-        ],
-        "example": [
-            ".meta/example.ex"
-        ]
-    },
-    "blurb": "Calculate the number of grains of wheat on a chessboard given that the number on each square doubles.",
-    "source": "JavaRanch Cattle Drive, exercise 6",
-    "source_url": "http://www.javaranch.com/grains.jsp"
+    "test": [
+      "t_grains.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Calculate the number of grains of wheat on a chessboard given that the number on each square doubles.",
+  "source": "The CodeRanch Cattle Drive, Assignment 6",
+  "source_url": "https://coderanch.com/wiki/718824/Grains"
 }

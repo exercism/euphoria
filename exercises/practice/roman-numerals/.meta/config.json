@@ -1,19 +1,19 @@
 {
-    "authors": [
-        "petelomax"
+  "authors": [
+    "petelomax"
+  ],
+  "files": {
+    "solution": [
+      "roman-numerals.ex"
     ],
-    "files": {
-        "solution": [
-            "roman-numerals.ex"
-        ],
-        "test": [
-            "t_roman-numerals.e"
-         ],
-        "example": [
-            ".meta/example.ex"
-        ]
-    },
-    "blurb": "Write a function to convert from normal numbers to Roman Numerals.",
-    "source": "The Roman Numeral Kata",
-    "source_url": "http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals"
+    "test": [
+      "t_roman-numerals.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Write a function to convert from normal numbers to Roman Numerals.",
+  "source": "The Roman Numeral Kata",
+  "source_url": "https://codingdojo.org/kata/RomanNumerals/"
 }

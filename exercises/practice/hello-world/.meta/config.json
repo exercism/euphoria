@@ -1,20 +1,19 @@
 {
-    "authors": [
-      "axtens"
+  "authors": [
+    "axtens"
+  ],
+  "files": {
+    "solution": [
+      "hello-world.ex"
     ],
-    "files": {
-      "solution": [
-        "hello-world.ex"
-      ],
-      "test": [
-        "t_hello-world.e"
-      ],
-      "example": [
-        ".meta/example.ex"
-      ]
-    },
-    "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
-    "source": "This is an exercise to introduce users to using Exercism",
-    "source_url": "http://en.wikipedia.org/wiki/%22Hello,_world!%22_program"
-  }
-  
+    "test": [
+      "t_hello-world.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Exercism's classic introductory exercise. Just say \"Hello, World!\".",
+  "source": "This is an exercise to introduce users to using Exercism",
+  "source_url": "https://en.wikipedia.org/wiki/%22Hello,_world!%22_program"
+}
