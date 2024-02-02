@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+filename="euphoria-${OPEN_EUPHORIA_VERSION}-Linux-x64-${OPEN_EUPHORIA_SHA}.tar.gz"
+wget "https://github.com/OpenEuphoria/euphoria/releases/download/${OPEN_EUPHORIA_VERSION}/${filename}"
+sudo tar -xzf "${filename}" -C /usr/local 
+cd /usr/local/bin 
+sudo find /usr/local/euphoria-${OPEN_EUPHORIA_VERSION}-Linux-x64/bin -type f -executable -exec ln -s {} \; 
+eui --version
