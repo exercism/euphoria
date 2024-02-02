@@ -1,6 +1,6 @@
 include std/unittest.e 
 
-include hello_world.ex 
+include hello-world.ex 
 
 set_test_verbosity(TEST_SHOW_ALL)
 
