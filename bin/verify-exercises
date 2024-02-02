@@ -25,6 +25,7 @@ for practice_exercise_dir in ./exercises/practice/*/; do
     if [ -d $practice_exercise_dir ]; then
         echo -n "Checking $(basename "${practice_exercise_dir}") exercise..."
         eui bin/run.ex $(basename "${practice_exercise_dir}") ${practice_exercise_dir} /tmp
+        echo -n $'\n'
     	if [[ $(jq -r '. | .status' /tmp/results.json) != "pass" ]]; then
             exit_code=1
         fi
