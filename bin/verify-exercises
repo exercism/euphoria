@@ -18,14 +18,6 @@
 # Example:
 # ./bin/test
 
-# Verify the Concept Exercises
-for concept_exercise_dir in ./exercises/concept/*/; do
-    if [ -d $concept_exercise_dir ]; then
-        echo "Checking $(basename "${concept_exercise_dir}") exercise..."
-        # TODO: run command to verify that the exemplar solution passes the tests
-    fi
-done
-
 # Verify the Practice Exercises
 for practice_exercise_dir in ./exercises/practice/*/; do
     if [ -d $practice_exercise_dir ]; then
