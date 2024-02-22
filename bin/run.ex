@@ -14,7 +14,17 @@ without trace
 integer false = 0
 integer true = not false
 re:regex err_id = re:new("<([0-9]+)>::(.*)")
-    
+
+function first_failure(sequence lines, sequence fallback)
+    for i = 1 to length(lines) do
+        sequence line = lines[i]
+        if match("failed:", line) then
+            return trim(line)
+        end if
+    end for
+    return fallback
+end function
+
 function failures(sequence txt)
     sequence parts = seq:split(txt,", ")    
     for i = 1 to length(parts) do
@@ -50,7 +60,7 @@ function check_for_failure(sequence lines, atom current)
 
     result = match("% success", lines[current])
     if result then
-        return {true, failures(lines[current])}
+        return {true, first_failure(lines, lines[current])}
     else 
         return {false, message}
     end if
