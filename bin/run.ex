@@ -78,7 +78,7 @@ procedure process(sequence slug, sequence soln_folder, sequence outp_folder)
     sequence status = "pass"
     sequence message = ""
 
-    trace(1)
+    --trace(1)
     
     for i = 1 to length(data) do
         sequence response = check_for_error(data, i)
