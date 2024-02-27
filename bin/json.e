@@ -1,4 +1,3 @@
-
 namespace json
 
 include std/convert.e

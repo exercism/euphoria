@@ -81,9 +81,9 @@ procedure process(sequence slug, sequence soln_folder, sequence outp_folder)
     cmd = build_commandline({"eutest", join_path({"/tmp", "t_" & slug & ".e"}), ">", outfile})
     system(cmd,2)
 
-    atom fh = open(outfile, "r")
-    sequence data = read_lines(fh)
-    close(fh)
+    atom ifh = open(outfile, "r")
+    sequence data = read_lines(ifh)
+    close(ifh)
 
     sequence status = "pass"
     sequence message = ""
@@ -114,14 +114,16 @@ procedure process(sequence slug, sequence soln_folder, sequence outp_folder)
         }
     }
 
-    fh = open(results_file,"w")
-    json_print(fh, JSON, false)
-    close(fh)
+    atom ofh = open(results_file,"w")
+    json_print(ofh, JSON, false)
+    close(ofh)
+
 end procedure
 
 sequence cmdline = command_line()
 if (length(cmdline) < 5) then
     puts(1, "usage: eui ./bin/run.ex exercise-slug path/to/solution/folder/ path/to/output/directory/\n")
 else
+    --trace(1)
     process(cmdline[3], cmdline[4], cmdline[5])
 end if
