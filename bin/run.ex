@@ -1,69 +1,122 @@
 include std/filesys.e
 include std/cmdline.e
 include std/io.e
-include std/sequence.e
+include std/sequence.e as seq
 include std/search.e as srch
 include std/regex.e as re
-include std/pretty.e
 include std/text.e
 include std/convert.e
 
+include json.e 
+
+without trace
+
+integer false = 0
+integer true = not false
+re:regex err_id = re:new("<([0-9]+)>::(.*)")
+
+function first_failure(sequence lines, sequence fallback)
+    for i = 1 to length(lines) do
+        sequence line = lines[i]
+        if match("failed:", line) then
+            return trim(line)
+        end if
+    end for
+    return fallback
+end function
+
+function failures(sequence txt)
+    sequence parts = seq:split(txt,", ")    
+    for i = 1 to length(parts) do
+        if match("failed",parts[i]) then
+            return parts[i]
+        end if
+    end for
+    return ""
+end function
+
+function check_for_error(sequence lines, atom current) 
+    sequence message = ""
+    object res = re:matches(err_id, lines[current]) 
+    if not atom(res) then
+        message = res[1]
+        atom err_number = to_integer(res[2])
+        if err_number = 74 then
+            -- need to extract the next line of the data[i]
+            message &= (" " & trim(lines[current+1]))
+        end if 
+        return {true, message}
+    else
+        return {false, message}
+    end if
+end function 
+
+function check_for_failure(sequence lines, atom current) 
+    sequence message = ""
+    integer result = match("100% success", lines[current])
+    if result then
+        return {false, message}
+    end if
+
+    result = match("% success", lines[current])
+    if result then
+        return {true, first_failure(lines, lines[current])}
+    else 
+        return {false, message}
+    end if
+end function 
+
 procedure process(sequence slug, sequence soln_folder, sequence outp_folder)
-    sequence solution_dir=canonical_path(soln_folder)
-    sequence output_dir=canonical_path(outp_folder)
-    sequence results_file=join_path({output_dir, SLASH & "results.json"})
+    sequence solution_dir = canonical_path(soln_folder)
+    sequence output_dir = canonical_path(outp_folder)
+    sequence results_file = join_path({output_dir, "/results.json"})
 
     create_directory(output_dir)
     printf(1, "%s: testing...", {slug})
-    sequence cmd = build_commandline({"cp",join_path({solution_dir, ".meta", "example.ex"}),join_path({SLASH & "tmp",slug & ".ex"})})
+    sequence cmd = build_commandline({"cp", join_path({solution_dir, ".meta", "example.ex"}),join_path({"/tmp", slug & ".ex"})})
     system(cmd,2)
-    cmd = build_commandline({"cp", join_path({solution_dir,"t_" & slug & ".e"}),SLASH & "tmp"})
+    cmd = build_commandline({"cp", join_path({solution_dir, "t_" & slug & ".e"}), "/tmp"})
     system(cmd, 2)
-    sequence outfile = join_path({SLASH & "tmp","t_" & slug & ".out"})
-    cmd = build_commandline({"eutest",join_path({SLASH & "tmp","t_" & slug & ".e"}),">", outfile})
+    sequence outfile = join_path({"/tmp", "t_" & slug & ".out"})
+    cmd = build_commandline({"eutest", join_path({"/tmp", "t_" & slug & ".e"}), ">", outfile})
     system(cmd,2)
 
     atom fh = open(outfile, "r")
     sequence data = read_lines(fh)
     close(fh)
 
-    atom failure = 0
-    sequence failmsg = ""
+    sequence status = "pass"
+    sequence message = ""
 
-    re:regex err_id = re:new("<([0-9]+)>::(.*)")
+    --trace(1)
     
     for i = 1 to length(data) do
-        object res = re:matches(err_id, data[i]) 
-        if not atom(res) then
-            failure = i
-            failmsg = res[1]
-            atom err_number = to_integer(res[2])
-            if err_number = 74 then
-                -- need to extract the next line of the data[i]
-                failmsg &= (" " & trim(data[i+1]))
-            end if 
+        sequence response = check_for_error(data, i)
+        if response[1] then
+            status = "error"
+            message = response[2]
             exit
-        else
-            integer result = match("100% success", data[i])
-            if result then exit end if
-                
-            result = match("% success", data[i])
-            if result then
-                failure = i 
-                failmsg = trim(data[i])
-                exit
-            end if
         end if 
+
+        response = check_for_failure(data, i)
+        if response[1] then
+            status = "fail"
+            message = response[2]
+            exit
+        end if
     end for
     
+    sequence JSON = {JSON_OBJECT, 
+        {
+            {"version", {JSON_NUMBER, 1}}, 
+            {"status", {JSON_STRING, status}}, 
+            {"message", {JSON_STRING, message}}
+        }
+    }
+
     fh = open(results_file,"w")
-    if failure = 0 then
-        write_file(fh, "{\"version\": 1, \"status\": \"pass\"}")
-    else
-        write_file(fh, sprintf("{\"version\": 1, \"status\": \"fail\", \"message\": \"%s\"}", {srch:find_replace("\"",failmsg,"\\\"")}))
-    end if
+    json_print(fh, JSON, false)
     close(fh)
-    --puts(1,"done\n")
 end procedure
 
 sequence cmdline = command_line()
