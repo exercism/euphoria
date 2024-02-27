@@ -9,7 +9,7 @@ include std/convert.e
 
 include json.e 
 
-with trace
+without trace
 
 integer false = 0
 integer true = not false
@@ -71,19 +71,15 @@ procedure process(sequence slug, sequence soln_folder, sequence outp_folder)
     sequence output_dir = canonical_path(outp_folder)
     sequence results_file = join_path({output_dir, "/results.json"})
 
-        -- you've lost the code that substituted example.ex 
-        create_directory(output_dir)
-        printf(1, "%s: testing...", {slug})
-        
-        sequence cmd = build_commandline({"cp",join_path({solution_dir, ".meta", "example.ex"}),join_path({"/tmp",slug & ".ex"})})
-        system(cmd,2)
-        
-        cmd = build_commandline({"cp", join_path({solution_dir,"t_" & slug & ".e"}),"/tmp"})
-        system(cmd, 2)
-
-        sequence outfile = join_path({SLASH & "tmp","t_" & slug & ".out"})
-        cmd = build_commandline({"eutest",join_path({"/tmp","t_" & slug & ".e"}),">", outfile})
-        system(cmd,2)
+    create_directory(output_dir)
+    printf(1, "%s: testing...", {slug})
+    sequence cmd = build_commandline({"cp", join_path({solution_dir, ".meta", "example.ex"}),join_path({"/tmp", slug & ".ex"})})
+    system(cmd,2)
+    cmd = build_commandline({"cp", join_path({solution_dir, "t_" & slug & ".e"}), "/tmp"})
+    system(cmd, 2)
+    sequence outfile = join_path({"/tmp", "t_" & slug & ".out"})
+    cmd = build_commandline({"eutest", join_path({"/tmp", "t_" & slug & ".e"}), ">", outfile})
+    system(cmd,2)
 
     atom ifh = open(outfile, "r")
     sequence data = read_lines(ifh)
@@ -121,12 +117,13 @@ procedure process(sequence slug, sequence soln_folder, sequence outp_folder)
     atom ofh = open(results_file,"w")
     json_print(ofh, JSON, false)
     close(ofh)
+
 end procedure
 
 sequence cmdline = command_line()
 if (length(cmdline) < 5) then
     puts(1, "usage: eui ./bin/run.ex exercise-slug path/to/solution/folder/ path/to/output/directory/\n")
 else
-    trace(1)
+    --trace(1)
     process(cmdline[3], cmdline[4], cmdline[5])
 end if
