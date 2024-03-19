@@ -78,7 +78,7 @@ procedure process(sequence slug, sequence soln_folder, sequence outp_folder)
     cmd = build_commandline({"cp", join_path({solution_dir, "t_" & slug & ".e"}), "/tmp"})
     system(cmd, 2)
     sequence outfile = join_path({"/tmp", "t_" & slug & ".out"})
-    cmd = build_commandline({"eutest", join_path({"/tmp", "t_" & slug & ".e"}), ">", outfile})
+    cmd = build_commandline({"eutest", join_path({"/tmp", "t_" & slug & ".e"}), ">", outfile,"2>&1"})
     system(cmd,2)
 
     atom ifh = open(outfile, "r")
