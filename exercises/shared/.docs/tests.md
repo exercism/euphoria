@@ -1,15 +1,27 @@
 # Tests
 
-<!-- TODO: write document
+If you have the eutest binary on your path, enter the command:
 
-  This document should contain instructions on how to run the exercise's tests.
+```bash
+eutest 
+```
+This will run all test files (t_*.e).
 
-  The instructions should be short and to the point.
+If the eutest binary is not on the PATH, in Windows enter
 
-  The docs/TESTS.md file can contain a more verbose description on how to run tests.
+```cmd
+\path\to\eutest
+```
 
-  When a student downloads an exercise via the CLI, this file's contents are
-  included into the HELP.md file.
+Linux or macOS:
 
-  See https://exercism.org/docs/building/tracks/shared-files for more information.
--->
+```bash
+/path/to/eutest
+```
+
+## Skipped tests
+
+Solving an exercise means making all its tests pass.
+By default, all the test in the t_*.e file are executed.
+To skip a test, prepend two dashes (the standard Euphoria comment marker) to the beginning of the line.
+
