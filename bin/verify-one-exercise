@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+usage="usage: $0 exercise_directory
+
+Test one exercise.
+
+example: $0 ./exercises/practice/grains"
+
+usage() { echo "$usage" >&2; exit 1; }
+
+[[ $# -eq 1 && -d "$1" ]] || usage
+
+slug=$(basename "$1")
+if ! [[ -f "$1/${slug}.ex" && -f "$1/t_${slug}.e" ]]; then
+    echo "'$1' does not appear to contain an exercise" >&2
+    echo "" >&2
+    usage
+fi
+
+eui bin/run.ex "${slug}" "$1" /tmp
+
+echo
+echo
+cat /tmp/t_${slug}.out
+
+[[ $(jq -r '.status' /tmp/results.json) == "pass" ]]
+exit $?
