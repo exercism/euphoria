@@ -1,255 +1,261 @@
 {
-    "language": "Euphoria",
-    "slug": "euphoria",
-    "active": false,
-    "status": {
-        "concept_exercises": false,
-        "test_runner": false,
-        "representer": false,
-        "analyzer": false
-    },
-    "blurb": "Euphoria is a powerful but easy-to-learn programming language. It has a simple syntax and structure with consistent rules, and is also easy to read. You can quickly, and with little effort, develop applications, big and small, for Windows, Unix variants (Linux, FreeBSD, ...) and MacOS.",
-    "version": 3,
-    "online_editor": {
-        "indent_style": "space",
-        "indent_size": 2,
-        "highlightjs_language": "euphoria"
-    },
-    "files": {
-        "solution": [
-            "%{pascal_slug}.ex"
-        ],
-        "test": [
-            "t_%{pascal_slug}.e"
-        ],
-        "example": [
-            ".meta/example.ex"
-        ],
-        "exemplar": [
-            ".meta/exemplar.ex"
-        ]
-    },
-    "exercises": {
-        "concept": [],
-        "practice": [
-            {
-                "slug": "hello-world",
-                "name": "Hello World",
-                "uuid": "6e37e01f-324d-4a92-ae96-b1810962cc4c",
-                "prerequisites": [],
-                "difficulty": 1,
-                "practices": []
-            },
-            {
-                "slug": "raindrops",
-                "name": "Raindrops",
-                "uuid": "a9e6c81b-4b46-445e-a381-a2743a5d7861",
-                "prerequisites": [],
-                "difficulty": 3,
-                "practices": []
-            },
-            {
-                "slug": "isogram",
-                "name": "Isogram",
-                "uuid": "ff3c2465-b540-4de7-9223-5bce2debaba9",
-                "prerequisites": [],
-                "difficulty": 3,
-                "practices": []
-            },
-            {
-                "slug": "leap",
-                "name": "Leap",
-                "uuid": "b2bd55e6-5efc-4014-b1ee-050ee4b120cb",
-                "prerequisites": [],
-                "difficulty": 2,
-                "practices": []
-            },
-            {
-                "slug": "hamming",
-                "name": "Hamming",
-                "uuid": "8a0c101b-9cc7-4c10-be3d-fe29c618f8e8",
-                "prerequisites": [],
-                "difficulty": 2,
-                "practices": []
-            },
-            {
-                "slug": "bob",
-                "name": "Bob",
-                "uuid": "4e696452-1bec-4c2f-9b35-56ba9e1a3a35",
-                "prerequisites": [],
-                "difficulty": 4,
-                "practices": []
-            },
-            {
-                "slug": "grains",
-                "name": "Grains",
-                "uuid": "e6220d03-9a9a-49d8-87e2-85dc2c4183a4",
-                "prerequisites": [],
-                "difficulty": 3,
-                "practices": []
-            },
-            {
-                "slug": "pangram",
-                "name": "Pangram",
-                "uuid": "c09f1c56-d265-4710-a177-95ea8cb721b4",
-                "prerequisites": [],
-                "difficulty": 3,
-                "practices": []
-            },
-            {
-                "slug": "acronym",
-                "name": "Acronym",
-                "uuid": "1e9161f9-0074-47d3-a7ae-019c3ab9bf59",
-                "prerequisites": [],
-                "difficulty": 4,
-                "practices": []
-            },
-            {
-                "slug": "isbn-verifier",
-                "name": "ISBN Verifier",
-                "uuid": "8610b4a9-9152-4e7a-b70f-8c6069c71326",
-                "prerequisites": [],
-                "difficulty": 5,
-                "practices": []
-            },
-            {
-                "slug": "darts",
-                "name": "Darts",
-                "uuid": "72c14717-9c99-427b-ad76-0bf3cc7e4a6b",
-                "prerequisites": [],
-                "difficulty": 6,
-                "practices": []
-            },
-            {
-                "slug": "two-fer",
-                "name": "Two-Fer",
-                "uuid": "86818461-e063-4009-95f2-d6d650be2118",
-                "prerequisites": [],
-                "difficulty": 1,
-                "practices": []
-            },
-            {
-                "slug": "collatz-conjecture",
-                "name": "Collatz Conjecture",
-                "uuid": "21d1d747-5e3d-478b-8933-c637952c9d67",
-                "prerequisites": [],
-                "difficulty": 3,
-                "practices": []
-            },
-            {
-                "slug": "anagram",
-                "name": "Anagram",
-                "uuid": "92cc664e-fb45-4926-a4be-6761798ebb57",
-                "prerequisites": [],
-                "difficulty": 4,
-                "practices": []
-            },
-            {
-                "slug": "triangle",
-                "name": "Triangle",
-                "uuid": "2f56c390-14a7-4f2a-b817-890779301122",
-                "prerequisites": [],
-                "difficulty": 5,
-                "practices": []
-            },
-            {
-                "slug": "yacht",
-                "name": "Yacht",
-                "uuid": "3d6793fe-75c1-47de-a507-f723b98d82ec",
-                "prerequisites": [],
-                "difficulty": 6,
-                "practices": []
-            },
-            {
-                "slug": "roman-numerals",
-                "name": "Roman Numerals",
-                "uuid": "28214d11-66cb-4149-b274-84772130c23e",
-                "prerequisites": [],
-                "difficulty": 5,
-                "practices": []
-            },
-            {
-                "slug": "pythagorean-triplets",
-                "name": "Pythagorean Triplets",
-                "uuid": "1a00845a-4eda-4c6e-87a4-a8d143950ab9",
-                "prerequisites": [],
-                "difficulty": 6,
-                "practices": []
-            },
-            {
-                "slug": "luhn",
-                "name": "Luhn",
-                "uuid": "74f5aae8-c894-4ccd-b96a-6feddf1b054e",
-                "prerequisites": [],
-                "difficulty": 7,
-                "practices": []
-            },
-            {
-                "slug": "sum-of-multiples",
-                "name": "Sum of Multiples",
-                "uuid": "75901b8d-4f43-4467-8c3a-cf5f4a12b6df",
-                "prerequisites": [],
-                "difficulty": 5,
-                "practices": []
-            }
-        ]
-    },
-    "concepts": [],
-    "key_features": [
-        {
-            "icon": "safe",
-            "title": "Safe",
-            "content": "Extensive error checking with full descriptions, stack trace, and a dump of variable values."
-        },
-        {
-            "icon": "cross-platform",
-            "title": "Cross-platform",
-            "content": "Euphoria programs run under Windows, Linux, OS/X, and any platform supporting GCC."
-        },
-        {
-            "icon": "expressive",
-            "title": "Expressive",
-            "content": "Routines are naturally generic, allowing for flexibility in handling different data types."
-        },
-        {
-            "icon": "easy",
-            "title": "Easy",
-            "content": "A remarkably simple, flexible, powerful language definition that is easy to learn and use."
-        },
-        {
-            "icon": "fast",
-            "title": "Fast",
-            "content": "A high-performance interpreter and an optimizing translator to C."
-        },
-        {
-            "icon": "documentation",
-            "title": "Documentation",
-            "content": "Documentation is extensive, making it easy to get started with Euphoria."
-        }
+  "language": "Euphoria",
+  "slug": "euphoria",
+  "active": false,
+  "status": {
+    "concept_exercises": false,
+    "test_runner": false,
+    "representer": false,
+    "analyzer": false
+  },
+  "blurb": "Euphoria is a powerful but easy-to-learn programming language. It has a simple syntax and structure with consistent rules, and is also easy to read. You can quickly, and with little effort, develop applications, big and small, for Windows, Unix variants (Linux, FreeBSD, ...) and MacOS.",
+  "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 2,
+    "highlightjs_language": "euphoria"
+  },
+  "files": {
+    "solution": [
+      "%{kebab_slug}.ex"
     ],
-    "tags": [
-        "paradigm/procedural",
-        "paradigm/imperative",
-        "typing/static",
-        "typing/dynamic",
-        "typing/strong",
-        "typing/weak",
-        "execution_mode/compiled",
-        "execution_mode/interpreted",
-        "platform/windows",
-        "platform/mac",
-        "platform/linux",
-        "runtime/standalone_executable",
-        "used_for/backends",
-        "used_for/cross_platform_development",
-        "used_for/embedded_systems",
-        "used_for/financial_systems",
-        "used_for/frontends",
-        "used_for/games",
-        "used_for/guis",
-        "used_for/robotics",
-        "used_for/scientific_calculations",
-        "used_for/scripts",
-        "used_for/web_development"
+    "test": [
+      "t_%{kebab_slug}.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ],
+    "exemplar": [
+      ".meta/exemplar.ex"
     ]
+  },
+  "exercises": {
+    "practice": [
+      {
+        "slug": "hello-world",
+        "name": "Hello World",
+        "uuid": "6e37e01f-324d-4a92-ae96-b1810962cc4c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "raindrops",
+        "name": "Raindrops",
+        "uuid": "a9e6c81b-4b46-445e-a381-a2743a5d7861",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "isogram",
+        "name": "Isogram",
+        "uuid": "ff3c2465-b540-4de7-9223-5bce2debaba9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "leap",
+        "name": "Leap",
+        "uuid": "b2bd55e6-5efc-4014-b1ee-050ee4b120cb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "hamming",
+        "name": "Hamming",
+        "uuid": "8a0c101b-9cc7-4c10-be3d-fe29c618f8e8",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "bob",
+        "name": "Bob",
+        "uuid": "4e696452-1bec-4c2f-9b35-56ba9e1a3a35",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "grains",
+        "name": "Grains",
+        "uuid": "e6220d03-9a9a-49d8-87e2-85dc2c4183a4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "pangram",
+        "name": "Pangram",
+        "uuid": "c09f1c56-d265-4710-a177-95ea8cb721b4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "acronym",
+        "name": "Acronym",
+        "uuid": "1e9161f9-0074-47d3-a7ae-019c3ab9bf59",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "isbn-verifier",
+        "name": "ISBN Verifier",
+        "uuid": "8610b4a9-9152-4e7a-b70f-8c6069c71326",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "72c14717-9c99-427b-ad76-0bf3cc7e4a6b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "two-fer",
+        "name": "Two-Fer",
+        "uuid": "86818461-e063-4009-95f2-d6d650be2118",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "uuid": "21d1d747-5e3d-478b-8933-c637952c9d67",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "anagram",
+        "name": "Anagram",
+        "uuid": "92cc664e-fb45-4926-a4be-6761798ebb57",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "triangle",
+        "name": "Triangle",
+        "uuid": "2f56c390-14a7-4f2a-b817-890779301122",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "yacht",
+        "name": "Yacht",
+        "uuid": "3d6793fe-75c1-47de-a507-f723b98d82ec",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "roman-numerals",
+        "name": "Roman Numerals",
+        "uuid": "28214d11-66cb-4149-b274-84772130c23e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "pythagorean-triplets",
+        "name": "Pythagorean Triplets",
+        "uuid": "1a00845a-4eda-4c6e-87a4-a8d143950ab9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "luhn",
+        "name": "Luhn",
+        "uuid": "74f5aae8-c894-4ccd-b96a-6feddf1b054e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
+        "slug": "sum-of-multiples",
+        "name": "Sum of Multiples",
+        "uuid": "75901b8d-4f43-4467-8c3a-cf5f4a12b6df",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "game-of-life",
+        "name": "Conway's Game of Life",
+        "uuid": "112653b0-6fad-4f6c-bc1e-998e4b04d677",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      }
+    ]
+  },
+  "key_features": [
+    {
+      "title": "Safe",
+      "content": "Extensive error checking with full descriptions, stack trace, and a dump of variable values.",
+      "icon": "safe"
+    },
+    {
+      "title": "Cross-platform",
+      "content": "Euphoria programs run under Windows, Linux, OS/X, and any platform supporting GCC.",
+      "icon": "cross-platform"
+    },
+    {
+      "title": "Expressive",
+      "content": "Routines are naturally generic, allowing for flexibility in handling different data types.",
+      "icon": "expressive"
+    },
+    {
+      "title": "Easy",
+      "content": "A remarkably simple, flexible, powerful language definition that is easy to learn and use.",
+      "icon": "easy"
+    },
+    {
+      "title": "Fast",
+      "content": "A high-performance interpreter and an optimizing translator to C.",
+      "icon": "fast"
+    },
+    {
+      "title": "Documentation",
+      "content": "Documentation is extensive, making it easy to get started with Euphoria.",
+      "icon": "documentation"
+    }
+  ],
+  "tags": [
+    "execution_mode/compiled",
+    "execution_mode/interpreted",
+    "paradigm/imperative",
+    "paradigm/procedural",
+    "platform/linux",
+    "platform/mac",
+    "platform/windows",
+    "runtime/standalone_executable",
+    "typing/dynamic",
+    "typing/static",
+    "typing/strong",
+    "typing/weak",
+    "used_for/backends",
+    "used_for/cross_platform_development",
+    "used_for/embedded_systems",
+    "used_for/financial_systems",
+    "used_for/frontends",
+    "used_for/games",
+    "used_for/guis",
+    "used_for/robotics",
+    "used_for/scientific_calculations",
+    "used_for/scripts",
+    "used_for/web_development"
+  ]
 }
