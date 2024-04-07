@@ -147,6 +147,14 @@
         "difficulty": 4
       },
       {
+        "slug": "protein-translation",
+        "name": "Protein Translation",
+        "uuid": "f47ff4b6-6dc6-4ca4-a224-5e1064408cf1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "isbn-verifier",
         "name": "ISBN Verifier",
         "uuid": "8610b4a9-9152-4e7a-b70f-8c6069c71326",
@@ -276,5 +284,5 @@
     "used_for/scientific_calculations",
     "used_for/scripts",
     "used_for/web_development"
-  ]
+]
 }
