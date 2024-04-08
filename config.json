@@ -40,20 +40,12 @@
         "difficulty": 1
       },
       {
-        "slug": "raindrops",
-        "name": "Raindrops",
-        "uuid": "a9e6c81b-4b46-445e-a381-a2743a5d7861",
+        "slug": "two-fer",
+        "name": "Two-Fer",
+        "uuid": "86818461-e063-4009-95f2-d6d650be2118",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
-      },
-      {
-        "slug": "isogram",
-        "name": "Isogram",
-        "uuid": "ff3c2465-b540-4de7-9223-5bce2debaba9",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 1
       },
       {
         "slug": "leap",
@@ -72,12 +64,20 @@
         "difficulty": 2
       },
       {
-        "slug": "bob",
-        "name": "Bob",
-        "uuid": "4e696452-1bec-4c2f-9b35-56ba9e1a3a35",
+        "slug": "raindrops",
+        "name": "Raindrops",
+        "uuid": "a9e6c81b-4b46-445e-a381-a2743a5d7861",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 3
+      },
+      {
+        "slug": "isogram",
+        "name": "Isogram",
+        "uuid": "ff3c2465-b540-4de7-9223-5bce2debaba9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       },
       {
         "slug": "grains",
@@ -96,9 +96,41 @@
         "difficulty": 3
       },
       {
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "uuid": "21d1d747-5e3d-478b-8933-c637952c9d67",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "reverse-string",
+        "name": "Reverse String",
+        "uuid": "9ab79f5d-08b6-4e8e-a234-e529850b34dd",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "bob",
+        "name": "Bob",
+        "uuid": "4e696452-1bec-4c2f-9b35-56ba9e1a3a35",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "acronym",
         "name": "Acronym",
         "uuid": "1e9161f9-0074-47d3-a7ae-019c3ab9bf59",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "anagram",
+        "name": "Anagram",
+        "uuid": "92cc664e-fb45-4926-a4be-6761798ebb57",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
@@ -112,38 +144,6 @@
         "difficulty": 5
       },
       {
-        "slug": "darts",
-        "name": "Darts",
-        "uuid": "72c14717-9c99-427b-ad76-0bf3cc7e4a6b",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 6
-      },
-      {
-        "slug": "two-fer",
-        "name": "Two-Fer",
-        "uuid": "86818461-e063-4009-95f2-d6d650be2118",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1
-      },
-      {
-        "slug": "collatz-conjecture",
-        "name": "Collatz Conjecture",
-        "uuid": "21d1d747-5e3d-478b-8933-c637952c9d67",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3
-      },
-      {
-        "slug": "anagram",
-        "name": "Anagram",
-        "uuid": "92cc664e-fb45-4926-a4be-6761798ebb57",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 4
-      },
-      {
         "slug": "triangle",
         "name": "Triangle",
         "uuid": "2f56c390-14a7-4f2a-b817-890779301122",
@@ -152,36 +152,12 @@
         "difficulty": 5
       },
       {
-        "slug": "yacht",
-        "name": "Yacht",
-        "uuid": "3d6793fe-75c1-47de-a507-f723b98d82ec",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 6
-      },
-      {
         "slug": "roman-numerals",
         "name": "Roman Numerals",
         "uuid": "28214d11-66cb-4149-b274-84772130c23e",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
-      },
-      {
-        "slug": "pythagorean-triplets",
-        "name": "Pythagorean Triplets",
-        "uuid": "1a00845a-4eda-4c6e-87a4-a8d143950ab9",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 6
-      },
-      {
-        "slug": "luhn",
-        "name": "Luhn",
-        "uuid": "74f5aae8-c894-4ccd-b96a-6feddf1b054e",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 7
       },
       {
         "slug": "sum-of-multiples",
@@ -200,12 +176,36 @@
         "difficulty": 5
       },
       {
-        "slug": "reverse-string",
-        "name": "Reverse String",
-        "uuid": "9ab79f5d-08b6-4e8e-a234-e529850b34dd",
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "72c14717-9c99-427b-ad76-0bf3cc7e4a6b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 6
+      },
+      {
+        "slug": "yacht",
+        "name": "Yacht",
+        "uuid": "3d6793fe-75c1-47de-a507-f723b98d82ec",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "pythagorean-triplets",
+        "name": "Pythagorean Triplets",
+        "uuid": "1a00845a-4eda-4c6e-87a4-a8d143950ab9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "luhn",
+        "name": "Luhn",
+        "uuid": "74f5aae8-c894-4ccd-b96a-6feddf1b054e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
       }
     ]
   },
