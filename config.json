@@ -115,6 +115,14 @@
         "difficulty": 3
       },
       {
+        "slug": "scrabble-score",
+        "name": "Scrabble Score",
+        "uuid": "3c8ae54c-55af-46f2-bee3-80acad400e9c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "bob",
         "name": "Bob",
         "uuid": "4e696452-1bec-4c2f-9b35-56ba9e1a3a35",

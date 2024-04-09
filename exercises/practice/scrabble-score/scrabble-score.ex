@@ -1,0 +1,2 @@
+--public function score(sequence word)
+--end function
