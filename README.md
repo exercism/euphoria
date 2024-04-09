@@ -2,7 +2,7 @@
 
 [![Configlet](https://github.com/exercism/euphoria/actions/workflows/configlet.yml/badge.svg)](https://github.com/exercism/euphoria/actions/workflows/configlet.yml) [![Test](https://github.com/exercism/euphoria/actions/workflows/test.yml/badge.svg)](https://github.com/exercism/euphoria/actions/workflows/test.yml)
 
-Exercism exercises in OpenEuphoria.
+Exercism exercises in Euphoria.
 
 ## Testing
 
