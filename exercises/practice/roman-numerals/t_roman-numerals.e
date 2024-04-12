@@ -29,6 +29,7 @@ test_equal("1024 is MXXIV", "MXXIV", roman(1024))
 test_equal("1666 is MDCLXVI", "MDCLXVI", roman(1666))
 test_equal("3000 is MMM", "MMM", roman(3000))
 test_equal("3001 is MMMI", "MMMI", roman(3001))
+test_equal("3888 is MMMDCCCLXXXVIII", "MMMDCCCLXXXVIII", roman(3888))
 test_equal("3999 is MMMCMXCIX", "MMMCMXCIX", roman(3999))
 
 test_report()
