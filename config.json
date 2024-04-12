@@ -8,15 +8,15 @@
     "representer": false,
     "analyzer": false
   },
-    "test_runner": {
-    "average_run_time": 2
-  },
   "blurb": "Euphoria is a powerful but easy-to-learn programming language. It has a simple syntax and structure with consistent rules, and is also easy to read. You can quickly, and with little effort, develop applications, big and small, for Windows, Unix variants (Linux, FreeBSD, ...) and MacOS.",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
     "indent_size": 2,
     "highlightjs_language": "euphoria"
+  },
+  "test_runner": {
+    "average_run_time": 2
   },
   "files": {
     "solution": [
@@ -118,6 +118,14 @@
         "slug": "scrabble-score",
         "name": "Scrabble Score",
         "uuid": "3c8ae54c-55af-46f2-bee3-80acad400e9c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "difference-of-squares",
+        "name": "Difference of Squares",
+        "uuid": "06d2e882-52db-4580-bb00-4b3123a8a0eb",
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
@@ -284,5 +292,5 @@
     "used_for/scientific_calculations",
     "used_for/scripts",
     "used_for/web_development"
-]
+  ]
 }
