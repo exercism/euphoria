@@ -4,7 +4,7 @@
  
 Simply type `eutest`. It is assumed that the path to the openeuphoria binaries has been declared in the PATH environment variable.
 
-See [Unit Testing][unt-testing] for comprehensive EUTEST documentation.
+See [Unit Testing][unit-testing] for comprehensive EUTEST documentation.
   
 ## Editing the t_*.e file
  
