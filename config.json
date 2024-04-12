@@ -83,6 +83,14 @@
         "difficulty": 2
       },
       {
+        "slug": "space-age",
+        "name": "Space Age",
+        "uuid": "392988de-70e0-4467-890d-32d73a0141af",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "a9e6c81b-4b46-445e-a381-a2743a5d7861",
