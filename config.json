@@ -195,6 +195,14 @@
         "difficulty": 4
       },
       {
+        "slug": "all-your-base",
+        "name": "All Your Base",
+        "uuid": "1e594609-0060-428f-a702-88c735b1ed5f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "isbn-verifier",
         "name": "ISBN Verifier",
         "uuid": "8610b4a9-9152-4e7a-b70f-8c6069c71326",
