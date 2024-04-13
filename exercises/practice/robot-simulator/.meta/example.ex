@@ -9,13 +9,13 @@ public function move(sequence robot, sequence commands)
         elsif command = 'R' then
             robot = store(robot, {3}, nested_get(axes, {robot[3], "right"}))
         elsif command = 'A' then
-            if compare(robot[3], "north") = 0 then
+            if equal(robot[3], "north") then
                 robot = store(robot, {2}, robot[2] + 1)
-            elsif compare(robot[3], "south") = 0 then
+            elsif equal(robot[3], "south") then
                 robot = store(robot, {2}, robot[2] - 1)
-            elsif compare(robot[3], "east") = 0 then
+            elsif equal(robot[3], "east") then
                 robot = store(robot, {1}, robot[1] + 1)
-            elsif compare(robot[3], "west") = 0 then
+            elsif equal(robot[3], "west") then
                 robot = store(robot, {1}, robot[1] - 1)
             end if
         end if 
