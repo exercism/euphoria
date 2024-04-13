@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "axtens"
+  ],
+  "files": {
+    "solution": [
+      "forth.ex"
+    ],
+    "test": [
+      "t_forth.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Implement an evaluator for a very simple subset of Forth."
+}
