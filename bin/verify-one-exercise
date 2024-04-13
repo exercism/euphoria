@@ -21,7 +21,7 @@ eui bin/run.ex "${slug}" "$1" /tmp
 
 echo
 echo
-cat /tmp/t_${slug}.out
+cat /tmp/${slug}/t_${slug}.out
 
 [[ $(jq -r '.status' /tmp/results.json) == "pass" ]]
 exit $?
