@@ -227,6 +227,14 @@
         "difficulty": 4
       },
       {
+        "slug": "allergies",
+        "name": "Allergies",
+        "uuid": "86001345-b847-4fe5-b478-d5bc42a75964",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "isbn-verifier",
         "name": "ISBN Verifier",
         "uuid": "8610b4a9-9152-4e7a-b70f-8c6069c71326",
