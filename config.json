@@ -91,6 +91,14 @@
         "difficulty": 2
       },
       {
+        "slug": "nucleotide-count",
+        "name": "Nucleotide Count",
+        "uuid": "1ba6a523-9e84-4150-b512-0dc77da874d0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "space-age",
         "name": "Space Age",
         "uuid": "392988de-70e0-4467-890d-32d73a0141af",
