@@ -11,7 +11,11 @@ stack Stack = stack:new()
 object Error
 enum FAIL=0, OK
 enum UNKNOWN, FUNC, VALUE 
-
+sequence ERROR_EMPTY_STACK = "empty stack"
+sequence ERROR_ONLY_ONE_VALUE = "only one value on the stack"
+sequence ERROR_DIVIDE_BY_ZERO = "divide by zero"
+sequence ERROR_UNDEFINED_OPERATION = "undefined operation"
+sequence ERROR_UNKNOWN_WORD = "unknown word"
 without warning
 with trace
 
@@ -19,7 +23,7 @@ procedure dup()
     if stack:size(Stack) > 0 then
         stack:push(Stack, stack:at(Stack,1))
     else 
-        Error = "empty stack"
+        Error = ERROR_EMPTY_STACK
     end if
 end procedure
 
@@ -31,9 +35,9 @@ procedure swap()
         stack:push(Stack, p2)
     else
         if stack:size(Stack) = 0 then
-            Error = "empty stack"
+            Error = ERROR_EMPTY_STACK
         else
-            Error = "only one value on the stack"
+            Error = ERROR_ONLY_ONE_VALUE
         end if
     end if
 end procedure
@@ -42,7 +46,7 @@ procedure drop()
     if stack:size(Stack) > 0 then
         stack:pop(Stack)
     else
-        Error = "empty stack"
+        Error = ERROR_EMPTY_STACK
     end if
 end procedure 
 
@@ -51,9 +55,9 @@ procedure over()
         stack:push(Stack, stack:at(Stack,2))
     else
         if stack:size(Stack) = 0 then   
-            Error = "empty stack"
+            Error = ERROR_EMPTY_STACK
         else
-            Error = "only one value on the stack"
+            Error = ERROR_ONLY_ONE_VALUE
         end if
     end if
 end procedure 
@@ -65,9 +69,9 @@ procedure plus()
         stack:push(Stack, p1 + p2)
     else
         if stack:size(Stack) = 0 then
-            Error = "empty stack"
+            Error = ERROR_EMPTY_STACK
         else
-            Error = "only one value on the stack"
+            Error = ERROR_ONLY_ONE_VALUE
         end if
     end if
 end procedure 
@@ -79,9 +83,9 @@ procedure minus()
         stack:push(Stack, p1 - p2)
     else
         if stack:size(Stack) = 0 then
-            Error = "empty stack"
+            Error = ERROR_EMPTY_STACK
         else
-            Error = "only one value on the stack"
+            Error = ERROR_ONLY_ONE_VALUE
         end if
     end if
 end procedure 
@@ -93,9 +97,9 @@ procedure times()
         stack:push(Stack, p1 * p2)
     else
         if stack:size(Stack) = 0 then
-            Error = "empty stack"
+            Error = ERROR_EMPTY_STACK
         else
-            Error = "only one value on the stack"
+            Error = ERROR_ONLY_ONE_VALUE
         end if
     end if
 
@@ -106,15 +110,15 @@ procedure idiv()
         object p2 = stack:pop(Stack)
         object p1 = stack:pop(Stack)
         if p2 = 0 then 
-            Error = "divide by zero"
+            Error = ERROR_DIVIDE_BY_ZERO
         else 
             stack:push(Stack, trunc(p1 / p2))
         end if
     else
         if stack:size(Stack) = 0 then
-            Error = "empty stack"
+            Error = ERROR_EMPTY_STACK
         else
-            Error = "only one value on the stack"
+            Error = ERROR_ONLY_ONE_VALUE
         end if
     end if
 
@@ -146,7 +150,7 @@ procedure definition (sequence parts)
     sequence interpreted = {}
     for i = 2 to length(parts) do
         if map:has(Dictionary, parts[i]) then
-            object item = map:get(Dictionary, parts[i], {UNKNOWN, "undefined operation"})
+            object item = map:get(Dictionary, parts[i], {UNKNOWN, ERROR_UNDEFINED_OPERATION})
             switch item[1] do
                 case UNKNOWN then
                     Error = item[2]
@@ -175,14 +179,14 @@ procedure number_or_word(sequence part)
         elsif id_or_sequence[1] = VALUE then
             interpret(id_or_sequence[2])
         else
-            Error = "unknown word"
+            Error = ERROR_UNKNOWN_WORD
         end if 
     else
         object num = to_number(part, 1)
         if num[2] = 0 then
             stack:push(Stack, num[1])
         else 
-            Error = "undefined operation"
+            Error = ERROR_UNDEFINED_OPERATION
         end if
     end if
 end procedure
