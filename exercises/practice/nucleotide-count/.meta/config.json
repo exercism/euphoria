@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "nucleotide-count.ex"
+    ],
+    "test": [
+      "t_nucleotide-count.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Given a DNA string, compute how many times each nucleotide occurs in the string.",
+  "source": "The Calculating DNA Nucleotides_problem at Rosalind",
+  "source_url": "https://rosalind.info/problems/dna/"
+}
