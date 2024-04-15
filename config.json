@@ -123,6 +123,14 @@
         "difficulty": 2
       },
       {
+        "slug": "strain",
+        "name": "Strain",
+        "uuid": "794d36e6-83c3-49a0-95a4-e065a4960dd0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "a9e6c81b-4b46-445e-a381-a2743a5d7861",
