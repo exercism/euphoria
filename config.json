@@ -13,7 +13,7 @@
   "online_editor": {
     "indent_style": "space",
     "indent_size": 2,
-    "highlightjs_language": "euphoria"
+    "highlightjs_language": "phix"
   },
   "test_runner": {
     "average_run_time": 2
