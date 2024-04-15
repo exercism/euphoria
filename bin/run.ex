@@ -72,13 +72,24 @@ procedure process(sequence slug, sequence soln_folder, sequence outp_folder)
     sequence results_file = join_path({output_dir, "/results.json"})
 
     create_directory(output_dir)
+    sequence tempdir = join_path({"/tmp", slug})
+    create_directory(tempdir)
+
     printf(1, "%s: testing...", {slug})
-    sequence cmd = build_commandline({"cp", join_path({solution_dir, ".meta", "example.ex"}),join_path({"/tmp", slug & ".ex"})})
+    sequence cmd = build_commandline({"cp", join_path({solution_dir, ".meta", "example.ex"}),join_path({tempdir, slug & ".ex"})})
     system(cmd,2)
-    cmd = build_commandline({"cp", join_path({solution_dir, "t_" & slug & ".e"}), "/tmp"})
+    cmd = build_commandline({"cp", join_path({solution_dir, "t_" & slug & ".e"}), tempdir})
     system(cmd, 2)
-    sequence outfile = join_path({"/tmp", "t_" & slug & ".out"})
-    cmd = build_commandline({"eutest", join_path({"/tmp", "t_" & slug & ".e"}), ">", outfile,"2>&1"})
+
+    -- if the solution contains a "lib" dir, copy it to /tmp
+    object libdir = dir(join_path({solution_dir, "lib"}))
+    if not equal(libdir, -1) then
+        cmd = build_commandline({"cp", "-R", join_path({solution_dir, "lib"}), join_path({tempdir, "lib"})})
+        system(cmd, 2)
+    end if
+        
+    sequence outfile = join_path({tempdir, "t_" & slug & ".out"})
+    cmd = build_commandline({"eutest", join_path({tempdir, "t_" & slug & ".e"}), ">", outfile,"2>&1"})
     system(cmd,2)
 
     atom ifh = open(outfile, "r")

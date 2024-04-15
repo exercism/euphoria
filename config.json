@@ -8,15 +8,15 @@
     "representer": false,
     "analyzer": false
   },
-    "test_runner": {
-    "average_run_time": 2
-  },
   "blurb": "Euphoria is a powerful but easy-to-learn programming language. It has a simple syntax and structure with consistent rules, and is also easy to read. You can quickly, and with little effort, develop applications, big and small, for Windows, Unix variants (Linux, FreeBSD, ...) and MacOS.",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
     "indent_size": 2,
     "highlightjs_language": "euphoria"
+  },
+  "test_runner": {
+    "average_run_time": 2
   },
   "files": {
     "solution": [
@@ -51,6 +51,22 @@
         "difficulty": 1
       },
       {
+        "slug": "clock",
+        "name": "Clock",
+        "uuid": "0d7d895a-fd34-4997-b900-9b98f5e30372",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "eliuds-eggs",
+        "name": "Eliud's Eggs",
+        "uuid": "369e4ad4-e33e-4eb2-afce-02bc307183d9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "leap",
         "name": "Leap",
         "uuid": "b2bd55e6-5efc-4014-b1ee-050ee4b120cb",
@@ -62,6 +78,46 @@
         "slug": "hamming",
         "name": "Hamming",
         "uuid": "8a0c101b-9cc7-4c10-be3d-fe29c618f8e8",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "resistor-color",
+        "name": "Resistor Color",
+        "uuid": "96cbd8b8-0a21-4fb1-86b1-dcc29133ba46",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "9736c0c2-9c46-4562-a168-190ed0fecc29",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "nucleotide-count",
+        "name": "Nucleotide Count",
+        "uuid": "1ba6a523-9e84-4150-b512-0dc77da874d0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "space-age",
+        "name": "Space Age",
+        "uuid": "392988de-70e0-4467-890d-32d73a0141af",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "square-root",
+        "name": "Square Root",
+        "uuid": "f1ffecf2-55e9-4a12-82d3-873e238a9624",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
@@ -123,6 +179,22 @@
         "difficulty": 3
       },
       {
+        "slug": "difference-of-squares",
+        "name": "Difference of Squares",
+        "uuid": "06d2e882-52db-4580-bb00-4b3123a8a0eb",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "sieve",
+        "name": "Sieve",
+        "uuid": "f80f2bc1-a03b-4c35-a07f-368eeceae7a9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "bob",
         "name": "Bob",
         "uuid": "4e696452-1bec-4c2f-9b35-56ba9e1a3a35",
@@ -142,6 +214,30 @@
         "slug": "anagram",
         "name": "Anagram",
         "uuid": "92cc664e-fb45-4926-a4be-6761798ebb57",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "protein-translation",
+        "name": "Protein Translation",
+        "uuid": "f47ff4b6-6dc6-4ca4-a224-5e1064408cf1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "all-your-base",
+        "name": "All Your Base",
+        "uuid": "1e594609-0060-428f-a702-88c735b1ed5f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "allergies",
+        "name": "Allergies",
+        "uuid": "86001345-b847-4fe5-b478-d5bc42a75964",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
@@ -225,6 +321,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 10
+      },
+      {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "ded09be2-0a3e-42c5-8397-06c84b5f1c39",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },

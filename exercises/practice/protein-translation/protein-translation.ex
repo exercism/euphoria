@@ -1,0 +1,2 @@
+--public function proteins(sequence strand)
+--end function
