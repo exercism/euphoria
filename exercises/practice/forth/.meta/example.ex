@@ -9,15 +9,17 @@ include std/math.e
 map Dictionary = map:new()
 stack Stack = stack:new()
 object Error
-enum FAIL=0, OK
+
+enum FAIL = 0, OK
 enum UNKNOWN, FUNC, VALUE 
-sequence ERROR_EMPTY_STACK = "empty stack"
-sequence ERROR_ONLY_ONE_VALUE = "only one value on the stack"
-sequence ERROR_DIVIDE_BY_ZERO = "divide by zero"
-sequence ERROR_UNDEFINED_OPERATION = "undefined operation"
-sequence ERROR_UNKNOWN_WORD = "unknown word"
+
+constant ERROR_EMPTY_STACK = "empty stack"
+constant ERROR_ONLY_ONE_VALUE = "only one value on the stack"
+constant ERROR_DIVIDE_BY_ZERO = "divide by zero"
+constant ERROR_UNDEFINED_OPERATION = "undefined operation"
+constant ERROR_UNKNOWN_WORD = "unknown word"
+
 without warning
-with trace
 
 procedure dup()
     if stack:size(Stack) > 0 then
@@ -102,7 +104,7 @@ procedure times()
             Error = ERROR_ONLY_ONE_VALUE
         end if
     end if
-
+    
 end procedure 
 
 procedure idiv()
@@ -121,7 +123,7 @@ procedure idiv()
             Error = ERROR_ONLY_ONE_VALUE
         end if
     end if
-
+    
 end procedure 
 
 procedure setup_dictionary()
@@ -129,7 +131,7 @@ procedure setup_dictionary()
     map:put(Dictionary, "SWAP", {FUNC, routine_id("swap")})
     map:put(Dictionary, "DROP", {FUNC, routine_id("drop")})
     map:put(Dictionary, "OVER", {FUNC, routine_id("over")})
-
+    
     map:put(Dictionary, "+", {FUNC, routine_id("plus")})
     map:put(Dictionary, "-", {FUNC, routine_id("minus")})
     map:put(Dictionary, "*", {FUNC, routine_id("times")})

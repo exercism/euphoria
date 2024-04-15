@@ -81,4 +81,6 @@ test_equal("definitions are case-insensitive",{1,1,1,1},evaluate({
   ": SWAP DUP Dup dup ;",
   "1 swap"}))
 
+test_equal("multiple user-defined words", {5,6}, evaluate(": foo 5 ; : bar foo ; : foo 6 ; bar foo"))
+
 test_report() 
