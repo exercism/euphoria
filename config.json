@@ -131,6 +131,14 @@
         "difficulty": 2
       },
       {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "ded09be2-0a3e-42c5-8397-06c84b5f1c39",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "raindrops",
         "name": "Raindrops",
         "uuid": "a9e6c81b-4b46-445e-a381-a2743a5d7861",
@@ -321,7 +329,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 7
-      },     
+      },
       {
         "slug": "forth",
         "name": "Forth",
@@ -329,14 +337,6 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 10
-      },
-      {
-        "slug": "robot-simulator",
-        "name": "Robot Simulator",
-        "uuid": "ded09be2-0a3e-42c5-8397-06c84b5f1c39",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
       }
     ]
   },
