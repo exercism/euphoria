@@ -1,20 +1,19 @@
 {
-    "authors": [
-      "axtens"
+  "authors": [
+    "axtens"
+  ],
+  "files": {
+    "solution": [
+      "pangram.ex"
     ],
-    "files": {
-      "solution": [
-        "pangram.ex"
-      ],
-      "test": [
-        "t_pangram.e"
-      ],
-      "example": [
-        ".meta/example.ex"
-      ]
-    },
-    "blurb": "Determine if a sentence is a pangram.",
-    "source": "Wikipedia",
-    "source_url": "https://en.wikipedia.org/wiki/Pangram"
-  }
-  
+    "test": [
+      "t_pangram.e"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Determine if a sentence is a pangram.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Pangram"
+}
