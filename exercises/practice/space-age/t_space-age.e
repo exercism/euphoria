@@ -1,22 +1,44 @@
-include std/unittest.e 
+include std/unittest.e
 include std/math.e
 
-include space-age.ex 
+include space-age.ex
 
 set_test_verbosity(TEST_SHOW_ALL)
 
-public function isClose(atom val1, atom val2)
-  return abs(val2 - val1) <= 0.01
-end function 
+test_approximately_equal("age on Earth",
+                         31.69,
+                         ageOn("Earth", 1000000000))
+test_approximately_equal("age on Mercury",
+                        280.88,
+                        ageOn("Mercury", 2134835688))
+test_approximately_equal("age on Venus",
+                        9.78,
+                        ageOn("Venus", 189839836))
+test_approximately_equal("age on Mars",
+                        35.88,
+                        ageOn("Mars", 2129871239))
+test_approximately_equal("age on Jupiter",
+                        2.41,
+                        ageOn("Jupiter", 901876382))
+test_approximately_equal("age on Saturn",
+                        2.15,
+                        ageOn("Saturn", 2000000000))
+test_approximately_equal("age on Uranus",
+                        0.46,
+                        ageOn("Uranus", 1210123456))
+test_approximately_equal("age on Neptune",
+                        0.35,
+                        ageOn("Neptune", 1821023456))
+test_false("invalid planet returns false",
+                        ageOn("Sun", 680804807))
 
-test_true("age on Earth", isClose(ageOn("Earth", 1000000000), 31.69))
-test_true("age on Mercury", isClose(ageOn("Mercury", 2134835688), 280.88))
-test_true("age on Venus", isClose(ageOn("Venus", 189839836), 9.78))
-test_true("age on Mars", isClose(ageOn("Mars", 2129871239), 35.88))
-test_true("age on Jupiter", isClose(ageOn("Jupiter", 901876382), 2.41))
-test_true("age on Saturn", isClose(ageOn("Saturn", 2000000000), 2.15))
-test_true("age on Uranus", isClose(ageOn("Uranus", 1210123456), 0.46))
-test_true("age on Neptune", isClose(ageOn("Neptune", 1821023456), 0.35))
-test_false("invalid planet causes error", ageOn("Sun", 680804807))
+test_report()
 
-test_report() 
+procedure test_approximately_equal(sequence desc,
+                                   atom expected,
+                                   atom outcome,
+                                   integer tolerance = 100)
+    expected = round(expected, tolerance)
+    outcome = round(outcome, tolerance)
+    test_equal(desc, expected, outcome)
+end procedure
