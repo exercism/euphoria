@@ -2,7 +2,6 @@
   "authors": [
     "axtens"
   ],
-  "contributors": [],
   "files": {
     "solution": [
       "grains.ex"
