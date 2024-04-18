@@ -51,6 +51,14 @@
         "difficulty": 1
       },
       {
+        "slug": "binary-search",
+        "name": "Binary Search",
+        "uuid": "223011f0-eb1a-4b5a-9868-6b45958c150a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "clock",
         "name": "Clock",
         "uuid": "0d7d895a-fd34-4997-b900-9b98f5e30372",
