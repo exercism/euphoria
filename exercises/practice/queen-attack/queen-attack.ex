@@ -1,7 +1,11 @@
-public function new_queen(integer row, integer column)
+public type queen(sequence position)
+
+end type
+
+public function can_attack(queen white_queen, queen black_queen)
 
 end function
 
-public function can_attack(sequence white_queen, sequence black_queen)
+function is_on_diagonal(queen white_queen, queen black_queen)
 
 end function
