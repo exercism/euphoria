@@ -123,6 +123,14 @@
         "difficulty": 2
       },
       {
+        "slug": "list-ops",
+        "name": "List Ops",
+        "uuid": "8d06cc4b-0160-4e08-96c4-b7a05455e5e5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "resistor-color",
         "name": "Resistor Color",
         "uuid": "96cbd8b8-0a21-4fb1-86b1-dcc29133ba46",
