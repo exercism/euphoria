@@ -1,5 +1,4 @@
 include std/math.e
-include std/pretty.e
 include std/unittest.e
 
 include list-ops.ex
