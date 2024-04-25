@@ -163,6 +163,14 @@
         "difficulty": 2
       },
       {
+        "slug": "perfect-numbers",
+        "name": "Perfect Numbers",
+        "uuid": "ffc6c25e-b03e-4e43-9e39-4989a799e981",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "secret-handshake",
         "name": "Secret Handshake",
         "uuid": "6c3beab0-7f66-47a3-b0cf-3424cc240a03",
