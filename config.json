@@ -40,7 +40,7 @@
         "uuid": "6e37e01f-324d-4a92-ae96-b1810962cc4c",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 2
       },
       {
         "slug": "two-fer",
@@ -48,7 +48,7 @@
         "uuid": "86818461-e063-4009-95f2-d6d650be2118",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 2
       },
       {
         "slug": "armstrong-numbers",
@@ -224,7 +224,7 @@
         "uuid": "a9e6c81b-4b46-445e-a381-a2743a5d7861",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "isogram",
@@ -232,7 +232,7 @@
         "uuid": "ff3c2465-b540-4de7-9223-5bce2debaba9",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "grains",
@@ -240,7 +240,7 @@
         "uuid": "e6220d03-9a9a-49d8-87e2-85dc2c4183a4",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "pangram",
@@ -248,7 +248,7 @@
         "uuid": "c09f1c56-d265-4710-a177-95ea8cb721b4",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "collatz-conjecture",
@@ -256,7 +256,7 @@
         "uuid": "21d1d747-5e3d-478b-8933-c637952c9d67",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "reverse-string",
@@ -264,7 +264,7 @@
         "uuid": "9ab79f5d-08b6-4e8e-a234-e529850b34dd",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "scrabble-score",
@@ -272,7 +272,7 @@
         "uuid": "3c8ae54c-55af-46f2-bee3-80acad400e9c",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "difference-of-squares",
@@ -280,7 +280,7 @@
         "uuid": "06d2e882-52db-4580-bb00-4b3123a8a0eb",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "sieve",
@@ -288,7 +288,7 @@
         "uuid": "f80f2bc1-a03b-4c35-a07f-368eeceae7a9",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "bob",
@@ -296,7 +296,7 @@
         "uuid": "4e696452-1bec-4c2f-9b35-56ba9e1a3a35",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 5
       },
       {
         "slug": "acronym",
@@ -304,7 +304,7 @@
         "uuid": "1e9161f9-0074-47d3-a7ae-019c3ab9bf59",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 5
       },
       {
         "slug": "anagram",
@@ -312,7 +312,7 @@
         "uuid": "92cc664e-fb45-4926-a4be-6761798ebb57",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 5
       },
       {
         "slug": "protein-translation",
@@ -320,7 +320,7 @@
         "uuid": "f47ff4b6-6dc6-4ca4-a224-5e1064408cf1",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 5
       },
       {
         "slug": "all-your-base",
@@ -328,7 +328,7 @@
         "uuid": "1e594609-0060-428f-a702-88c735b1ed5f",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 5
       },
       {
         "slug": "allergies",
@@ -336,7 +336,7 @@
         "uuid": "86001345-b847-4fe5-b478-d5bc42a75964",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 5
       },
       {
         "slug": "isbn-verifier",
@@ -384,7 +384,7 @@
         "uuid": "72c14717-9c99-427b-ad76-0bf3cc7e4a6b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6
+        "difficulty": 5
       },
       {
         "slug": "yacht",
@@ -392,7 +392,7 @@
         "uuid": "3d6793fe-75c1-47de-a507-f723b98d82ec",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6
+        "difficulty": 5
       },
       {
         "slug": "pythagorean-triplets",
@@ -400,7 +400,7 @@
         "uuid": "1a00845a-4eda-4c6e-87a4-a8d143950ab9",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6
+        "difficulty": 5
       },
       {
         "slug": "luhn",
@@ -408,7 +408,7 @@
         "uuid": "74f5aae8-c894-4ccd-b96a-6feddf1b054e",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 7
+        "difficulty": 8
       },
       {
         "slug": "forth",
@@ -416,7 +416,7 @@
         "uuid": "2f40d717-4b87-43d2-a069-50029eb709b2",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 10
+        "difficulty": 8
       }
     ]
   },
