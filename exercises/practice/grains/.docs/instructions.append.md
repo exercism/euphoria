@@ -1,24 +1,16 @@
 # Numbers in Euphoria
 
-Euphoria has only two data type: `atom` for numbers and `sequence` for arrays.
-An atom represents any kind of number.
+In Euphoria an `atom` can hold any kind of number, with the subtype `integer` meant for whole numbers.
+It is possible to solve this exercise in C-like languages by returning an unsigned 64 bit integer.
 
-There is a specialized number type: `integer`.
-Integers are signed and are _one bit smaller than the machine word_.
-For 64-bit computers, the integer type is too small for this exercise.
-Atoms can hold larger integers, with the needed 64 bits of precision.
+However integers in Euphoria are signed and _one bit smaller than the machine word_, hence too small
+for this exercise, whereas atoms can hold larger integers with the needed 64 bits of precision.
 
-## Relating to this `grains` exercise
+## 32-bit
 
-You'll notice one test stands out a bit.
-"grains on square 64" expects a floating point number, not an integer.
+There is a 32-bit version of Euphoria, which still exists so that legacy applications can continue 
+to use pre-built 32-bit dll/so when no 64-bit version is available, or the wrapper for such is full
+of hard-coded 32-bit offsets. It is however entirely inadequate to solve this task (since atoms on 
+that only have 53 bits of precision). The exercism site uses a 64-bit version of Euphoria, but if 
+struggling in the CLI check that got installed on that machine too.
 
-<details><summary>
-There is (spoiler alert) also an outstanding issue in the current release of Euphoria whereby 
-<code>power(2,63)</code> is <strong>not equal</strong> to the <em>integer</em> <code>9223372036854775808</code>.
-</summary>
-
-This is an quirk relating to the implementation of integers that affect this one specific number.
-
-`power(2, 63)` is, however, equal to the _float_ `9223372036854775808.0`.
-</details>
