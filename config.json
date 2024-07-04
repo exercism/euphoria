@@ -355,6 +355,14 @@
         "difficulty": 5
       },
       {
+        "slug": "pig-latin",
+        "name": "Pig Latin",
+        "uuid": "fc1a0408-cec3-451f-85ad-5f483fa4f451",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "protein-translation",
         "name": "Protein Translation",
         "uuid": "f47ff4b6-6dc6-4ca4-a224-5e1064408cf1",
