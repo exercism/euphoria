@@ -155,6 +155,14 @@
         "difficulty": 2
       },
       {
+        "slug": "kindergarten-garden",
+        "name": "Kindergarten Garden",
+        "uuid": "bb3efda1-66ba-4d6e-b2ea-53db705203d3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "nucleotide-count",
         "name": "Nucleotide Count",
         "uuid": "1ba6a523-9e84-4150-b512-0dc77da874d0",
