@@ -379,6 +379,14 @@
         "difficulty": 5
       },
       {
+        "slug": "largest-series-product",
+        "name": "Largest Series Product",
+        "uuid": "ac53ce09-e0d9-4831-bf11-f629e31b9809",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "pascals-triangle",
         "name": "Pascal's Triangle",
         "uuid": "49c4fa9d-dd05-477d-a9e7-fc81aca08606",
