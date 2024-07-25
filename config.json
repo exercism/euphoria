@@ -187,6 +187,14 @@
         "difficulty": 2
       },
       {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "f6be0364-ba08-4ee3-9f17-a33cd1dadb58",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "queen-attack",
         "name": "Queen Attack",
         "uuid": "69a00ba2-0c45-459d-b9a8-c416710a16ab",
