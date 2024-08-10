@@ -4,10 +4,10 @@
   ],
   "files": {
     "solution": [
-      "pythagorean-triplets.ex"
+      "pythagorean-triplet.ex"
     ],
     "test": [
-      "t_pythagorean-triplets.e"
+      "t_pythagorean-triplet.e"
     ],
     "example": [
       ".meta/example.ex"
