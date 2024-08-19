@@ -43,6 +43,14 @@
         "difficulty": 2
       },
       {
+        "slug": "atbash-cipher",
+        "name": "Atbash Cipher",
+        "uuid": "e286c24b-8050-487c-affe-762e05026a40",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "binary-search",
         "name": "Binary Search",
         "uuid": "223011f0-eb1a-4b5a-9868-6b45958c150a",
