@@ -30,6 +30,7 @@ test_equal("Translation stops if STOP codon at end of two-codon sequence", {"Try
 test_equal("Translation stops if STOP codon at end of three-codon sequence", {"Methionine", "Phenylalanine"}, proteins("AUGUUUUAA"))
 test_equal("Translation stops if STOP codon in middle of three-codon sequence", {"Tryptophan"}, proteins("UGGUAGUGG"))
 test_equal("Translation stops if STOP codon in middle of six-codon sequence", {"Tryptophan", "Cysteine", "Tyrosine"}, proteins("UGGUGUUAUUAAUGGUUU"))
+test_equal("Sequence of two non-STOP codons does not translate to a STOP codon", {"Methionine", "Methionine"}, proteins("AUGAUG"))
 test_equal("Non-existing codon can't translate", {}, proteins("AAA"))
 test_equal("Unknown amino acids, not part of a codon, can't translate", {}, proteins("XYZ"))
 test_equal("Incomplete RNA sequence can't translate", {}, proteins("AUGU"))
