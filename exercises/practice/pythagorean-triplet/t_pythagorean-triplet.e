@@ -1,6 +1,6 @@
 include std/unittest.e
 
-include pythagorean-triplets.ex
+include pythagorean-triplet.ex
 
 set_test_verbosity(TEST_SHOW_ALL)
 
