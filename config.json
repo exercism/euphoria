@@ -171,6 +171,14 @@
         "difficulty": 2
       },
       {
+        "slug": "nth-prime",
+        "name": "Nth Prime",
+        "uuid": "42664f39-c165-4fb5-81e1-5b7bb644b735",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "kindergarten-garden",
         "name": "Kindergarten Garden",
         "uuid": "bb3efda1-66ba-4d6e-b2ea-53db705203d3",
