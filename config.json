@@ -259,6 +259,14 @@
         "difficulty": 2
       },
       {
+        "slug": "resistor-color-trio",
+        "name": "Resistor Color Trio",
+        "uuid": "584d3eac-4e8b-45d7-9e89-3a358f099803",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "reverse-string",
         "name": "Reverse String",
         "uuid": "9ab79f5d-08b6-4e8e-a234-e529850b34dd",
