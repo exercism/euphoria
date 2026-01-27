@@ -387,6 +387,14 @@
         "difficulty": 5
       },
       {
+        "slug": "camicia",
+        "name": "Camicia",
+        "uuid": "978801f4-bd4a-4825-842f-cd47b329fba1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "game-of-life",
         "name": "Conway's Game of Life",
         "uuid": "112653b0-6fad-4f6c-bc1e-998e4b04d677",
