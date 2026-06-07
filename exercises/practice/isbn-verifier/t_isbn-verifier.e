@@ -11,6 +11,8 @@ test_equal("check digit is a character other than X", 0, is_valid("3-598-21507-A
 test_equal("invalid check digit in isbn is not treated as zero", 0, is_valid("4-598-21507-B"))
 test_equal("invalid character in isbn is not treated as zero", 0, is_valid("3-598-P1581-X"))
 test_equal("X is only valid as a check digit", 0, is_valid("3-598-2X507-9"))
+test_equal("only one check digit is allowed", 0, is_valid("3-598-21508-96"))
+test_equal("X is not substituted by the value 10", 0, is_valid("3-598-2X507-5"))
 test_equal("valid isbn without separating dashes", 1, is_valid("3598215088"))
 test_equal("isbn without separating dashes and X as check digit", 1, is_valid("359821507X"))
 test_equal("isbn without check digit and dashes", 0, is_valid("359821507"))
