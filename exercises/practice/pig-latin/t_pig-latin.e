@@ -34,6 +34,9 @@ test_equal("first letter and ay are moved to the end of words that start with co
 test_equal("first letter and ay are moved to the end of words that start with consonants - word beginning with q without a following u",
            "atqay",
            translate("qat"))
+test_equal("first letter and ay are moved to the end of words that start with consonants -> word beginning with consonant and vowel containing qu",
+           "iquidlay",
+           translate("liquid"))
 test_equal("some letter clusters are treated like a single consonant - word beginning with ch",
            "airchay",
            translate("chair"))
