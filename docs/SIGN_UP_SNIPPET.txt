@@ -1,0 +1,14 @@
+function most_common_word(sequence text)
+	map counts = map:new()
+	sequence words = split(lower(text), ' ')
+	sequence best = ""
+	integer best_count = 0
+	for i = 1 to length(words) do
+		map:put(counts, words[i], 1, map:ADD)
+		if map:get(counts, words[i]) > best_count then
+			best = words[i]
+			best_count = map:get(counts, best)
+		end if
+	end for
+	return sprintf("\"%s\" appears %d times", {best, best_count})
+end function
